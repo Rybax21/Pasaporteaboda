@@ -310,6 +310,40 @@ body {
     width: 120px; /* Aumentado el tamaño para pantallas grandes */
   }
 }
+@media (max-width: 768px) {
+  .detalles, .momentos-boda {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bloque, .momento {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .polaroid-contenedor {
+    width: 100%;
+  }
+
+  .formulario-asistencia {
+    padding: 0 10px;
+  }
+
+  .reloj {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .boarding-pass {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+}
+
 .cuenta-atras {
   padding: 100px 20px;
   position: relative;
