@@ -254,14 +254,22 @@ body {
 }
 
 .momentos-boda {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 40px;
-  padding: 60px 20px;
-  text-align: center;
-  color: aliceblue;
+  .momento {
+    flex: 1 1 120px;
+    max-width: 150px;
+    background: rgba(241, 225, 225, 0.308);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }
 
 .momento {
@@ -281,7 +289,7 @@ body {
 }
 
 .momentos-boda img {
-  width: 80px; /* Ajustado el tamaño de las imágenes */
+ max-width: 100%; /* Ajustado el tamaño de las imágenes */
   height: auto;
   margin-bottom: 10px;
   filter: brightness(0) invert(1);
@@ -310,11 +318,6 @@ body {
     width: 120px; /* Aumentado el tamaño para pantallas grandes */
   }
 }
-@media (max-width: 768px) {
-  .detalles, .momentos-boda {
-    flex-direction: column;
-    gap: 20px;
-  }
 
   .bloque, .momento {
     max-width: 90%;
@@ -342,7 +345,6 @@ body {
   .header h1 {
     font-size: 20px;
   }
-}
 
 .cuenta-atras {
   padding: 100px 20px;
@@ -428,16 +430,14 @@ body {
   font-size: 0.95rem;
 }
 .polaroid-contenedor {
+  max-width: 75%;
   position: relative;
- display:flex;
- flex-wrap: wrap;
-  justify-content: center;
   margin: 0 auto;
   cursor: pointer;
 }
 
 .marco-polaroid {
-  width: 100%;
+  max-width: 100%;
   display: block;
 }
 
