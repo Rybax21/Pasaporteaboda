@@ -8,26 +8,27 @@
 </head>
 <body>
     <div class="boarding-pass">
-        <div class="boarding-pass-header">
-            <h1>CONFIRMACIÓN DE ASISTENCIA</h1>
+        <div class="header">
+            <span class="logo">✈️ Air Company</span>
+            <h1>BOARDING PASS</h1>
         </div>
-        <div class="boarding-pass-body">
-            <div class="passenger-info">
-              <h2>¡Tu Boleto de Confirmación!</h2>
-              <p><strong>Nombre:</strong> <span id="nombre"></span></p>
-              <p><strong>Parentesco:</strong> <span id="parentesco"></span></p>
-              <p><strong>Número de invitados:</strong> <span id="numeroInvitados"></span></p>
-              <p><strong>Teléfono:</strong> <span id="telefono"></span></p>
-              <p><strong>Elige Chozo:</strong> <span id="chozo"></span></p>
-              <p><strong>Canción solicitada:</strong> <span id="cancion"></span></p>
-              <p><strong>Necesidades adicionales:</strong> <span id="mensaje"></span></p>
-              <a href="index.html" class="btn">Volver al Inicio</a>
+        <div class="details">
+            <div class="left">
+                <p><strong>Nombre:</strong> <span id="nombre">No disponible</span></p>
+                <p><strong>Parentesco:</strong> <span id="parentesco">No disponible</span></p>
+                <p><strong>Número de invitados:</strong> <span id="numeroInvitados">No disponible</span></p>
             </div>
-            <script src="confirmacion.js"></script>
+            <div class="right">
+                <p><strong>Teléfono:</strong> <span id="telefono">No disponible</span></p>
+                <p><strong>Elige Chozo:</strong> <span id="chozo">No disponible</span></p>
+                <p><strong>Canción solicitada:</strong> <span id="cancion">No disponible</span></p>
+            </div>
         </div>
-        <div class="boarding-pass-footer">
+        <div class="footer">
             <p>¡Te esperamos el 18 de octubre de 2025!</p>
         </div>
     </div>
+
+    <script src="confirmacion.js"></script>
 </body>
 </html>

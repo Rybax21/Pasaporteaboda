@@ -395,7 +395,9 @@ body {
 }
 .polaroid-contenedor {
   position: relative;
-  width: 500px;
+ display:flex;
+ flex-wrap: wrap;
+  justify-content: center;
   margin: 0 auto;
   cursor: pointer;
 }
