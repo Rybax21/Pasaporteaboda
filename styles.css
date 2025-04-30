@@ -293,16 +293,25 @@ body {
 }
 
 @media (min-width: 768px) {
+  .momentos-boda {
+    max-width: 700px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
   .momentos-boda img {
     width: 100px;
   }
 }
+
 
 @media (min-width: 1200px) {
   .momentos-boda img {
     width: 120px;
   }
 }
+
+
 
 /* ================ */
 /* MEDIA QUERIES    */
