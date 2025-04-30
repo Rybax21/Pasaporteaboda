@@ -468,21 +468,36 @@ body {
   pointer-events: none;
   background: transparent;
 }
-@media (min-width: 400px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .detalles,
   .momentos-boda {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     justify-items: center;
+    padding: 0 10px;
   }
+
+  .bloque,
+  .momento {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .bloque img,
+  .momento img {
+    display: block;
+    margin: 0 auto 15px auto;
+  }
+}
 
   .bloque,
   .momento {
     max-width: 90%;
     margin: 0 auto;
   }
-}
+
 @media (max-width: 399px) {
   .bloque,
   .momento {
