@@ -433,21 +433,22 @@ body {
 }
 
 .polaroid-contenedor {
-  max-width: 75%;
-  position: relative;
-  margin: 0 auto;
-  cursor: pointer;
+    position: relative;
+    max-width: 75%; /* Ajuste de tamaño */
+    margin: auto;
 }
 
 .marco-polaroid {
-    max-width: 100%;
-    height: auto; /* Mantiene la proporción */
+    width: 100%; /* Asegura que el marco y la imagen coincidan */
     display: block;
 }
 
 .foto-incrustada {
-    width: 100%; /* Ahora ocupa todo el espacio del marco polaroid */
-    height: auto;
+    position: absolute;
+    top: 11%; /* Ajusta la posición dentro del marco */
+    left: 8%; /* Centra dentro del marco */
+    width: 84%; /* Reduce proporcionalmente sin desbordar */
+    height: 65%; /* Mantiene proporciones */
     object-fit: cover;
     border-radius: 4px;
 }
