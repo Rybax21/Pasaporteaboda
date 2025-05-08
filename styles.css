@@ -133,25 +133,21 @@ body {
 
 .detalles {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px; 
-    margin-top: 30px;
-    max-width: 500px;
-    margin: 30px auto;
-
+    flex-wrap: wrap; /* Mantiene la adaptabilidad en móviles */
+    justify-content: center; /* Centra los bloques */
+    gap: 10px; /* Ajustamos la separación */
+    max-width: 600px; /* Aseguramos que no sean demasiado anchos */
+    margin: 30px auto; /* Centra el conjunto */
 }
+
 
 
 .bloque {
-    background: rgba(255, 255, 255, 1); 
+    flex: 1 1 250px; /* Hace que los bloques se ajusten en línea */
+    max-width: 280px; /* Limita el ancho para que no ocupen todo el espacio */
     padding: 20px;
-    border-radius: 10px;
-    max-width: 240px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
-    width: 100%;
 }
+
 
 .bloque:hover {
   transform: translateY(-5px);
