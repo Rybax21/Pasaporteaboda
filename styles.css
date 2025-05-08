@@ -337,9 +337,11 @@ body {
     padding: 0 10px;
   }
 
-  .polaroid-contenedor {
-    width: 100%;
-  }
+.polaroid-contenedor {
+    max-width: 70%; 
+    margin: auto;
+    position: relative;
+}
 
   .boarding-pass {
     padding: 15px;
@@ -442,20 +444,16 @@ body {
 }
 
 .marco-polaroid {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    height: auto; /* Mantiene la proporción */
+    display: block;
 }
 
 .foto-incrustada {
-    position: absolute;
-    top: 11.5%;
-    left: 7.5%;
-    width: 70%; 
-    height: auto; 
+    width: 100%; /* Ahora ocupa todo el espacio del marco polaroid */
+    height: auto;
     object-fit: cover;
     border-radius: 4px;
-    opacity: 0;
-    transition: opacity 0.8s ease-in-out;
 }
 
 .texto-polaroid {
