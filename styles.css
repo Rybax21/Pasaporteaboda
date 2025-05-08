@@ -132,20 +132,18 @@ body {
 }
 
 .detalles {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Reduce la separación */
 }
 
+
 .bloque {
-  background: rgba(255, 254, 254, 0.95);
-  padding: 25px;
-  border-radius: 10px;
-  max-width: 280px;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
+    flex: 1 1 280px; 
+    text-align: center;
+    padding: 20px;
+    max-width: 320px; /
 }
 
 .bloque:hover {
@@ -445,15 +443,15 @@ body {
 }
 
 .foto-incrustada {
-  position: absolute;
-  top: 11.5%;
-  left: 7.5%;
-  width: 85%;
-  height: 65%;
-  object-fit: cover;
-  border-radius: 4px;
-  opacity: 0;
-  transition: opacity 0.8s ease-in-out;
+    position: absolute;
+    top: 11.5%;
+    left: 7.5%;
+    width: 70%; 
+    height: auto; 
+    object-fit: cover;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
 }
 
 .texto-polaroid {
