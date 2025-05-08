@@ -143,6 +143,7 @@ body {
 
 
 .bloque {
+    background: rgba(255, 255, 255, 1);
     flex: 1 1 250px; /* Hace que los bloques se ajusten en línea */
     max-width: 280px; /* Limita el ancho para que no ocupen todo el espacio */
     padding: 20px;
