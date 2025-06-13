@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confirmación de Asistencia</title>
-    <link rel="stylesheet" href="boardingpass.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confirmación</title>
+  <link rel="stylesheet" href="boardingpass.css" />
 </head>
 <body>
-    <div class="boarding-pass">
-        <div class="header">
-            <span class="logo">✈️ Air Company</span>
-            <h1>BOARDING PASS</h1>
-        </div>
-        <div class="details">
-            <div class="left">
-                <p><strong>Nombre:</strong> <span id="nombre">No disponible</span></p>
-                <p><strong>Parentesco:</strong> <span id="parentesco">No disponible</span></p>
-                <p><strong>Número de invitados:</strong> <span id="numeroInvitados">No disponible</span></p>
-            </div>
-            <div class="right">
-                <p><strong>Teléfono:</strong> <span id="telefono">No disponible</span></p>
-                <p><strong>Elige Chozo:</strong> <span id="chozo">No disponible</span></p>
-                <p><strong>Canción solicitada:</strong> <span id="cancion">No disponible</span></p>
-            </div>
-        </div>
-        <div class="footer">
-            <p>¡Te esperamos el 18 de octubre de 2025!</p>
-        </div>
+  <div class="boarding-pass">
+    <div class="bp-header">
+      <h1>Emilio & Sandra Airlines</h1>
+      <p>Tarjeta de embarque</p>
     </div>
 
-    <script src="confirmacion.js"></script>
+    <div class="bp-body">
+      <div class="bp-group"><span>Nombre:</span> <strong id="nombre">---</strong></div>
+      <div class="bp-group"><span>Parentesco:</span> <strong id="parentesco">---</strong></div>
+      <div class="bp-group"><span>Nº Invitados:</span> <strong id="numeroInvitados">---</strong></div>
+      <div class="bp-group"><span>Teléfono:</span> <strong id="telefono">---</strong></div>
+      <div class="bp-group"><span>¿Chozo?</span> <strong id="chozo">---</strong></div>
+      <div class="bp-group"><span>Canción:</span> <strong id="cancion">---</strong></div>
+      <div class="bp-group"><span>Sugerencias:</span> <strong id="mensaje">---</strong></div>
+    </div>
+
+    <div class="bp-footer">
+      <p>Vuelo: <strong>ES1810</strong> &nbsp;&nbsp; | &nbsp;&nbsp; Puerta: <strong>2025</strong></p>
+      <p>¡Gracias por confirmar! 💍</p>
+    </div>
+  </div>
+
+  <script src="confirmacion.js"></script>
 </body>
 </html>
