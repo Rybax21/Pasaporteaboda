@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   // === CUENTA ATRÁS ===
   function iniciarCuentaAtras() {
     const fechaBoda = new Date("2025-10-18T00:00:00").getTime();
@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const diferencia = fechaBoda - ahora;
 
       const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-      const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const horas = Math.floor(
+        (diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
       const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
       const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
 
@@ -18,7 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (diferencia < 0) {
         clearInterval(temporizador);
-        document.querySelector(".cuenta").innerHTML = "<h2>¡Ya llegó el gran día!</h2>";
+        document.querySelector(".cuenta").innerHTML =
+          "<h2>¡Ya llegó el gran día!</h2>";
       }
     }, 1000);
   }
@@ -26,9 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
   iniciarCuentaAtras();
 
   // === EFECTO POLAROID Y SONIDO ===
-  const fotoClick = document.getElementById('polaroidFoto');
-  const fotoReal = document.getElementById('fotoReal');
-  const texto = document.querySelector('.texto-polaroid');
+  const fotoClick = document.getElementById("polaroidFoto");
+  const fotoReal = document.getElementById("fotoReal");
+  const texto = document.querySelector(".texto-polaroid");
 
 if (fotoClick) {
   fotoClick.addEventListener('click', () => {
@@ -44,6 +47,7 @@ if (fotoClick) {
   });
 }
 
+});
 // === TRAZADO EN FORMA DE CORAZÓN CON ESTELA ===
 document.addEventListener("DOMContentLoaded", () => {
   const canvas = document.getElementById("canvasAvion");
@@ -69,12 +73,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const centerY = canvas.height / 2.2;
 
     const x = centerX + scale * 16 * Math.pow(Math.sin(t), 3);
-    const y = centerY - scale * (
-      13 * Math.cos(t) -
-      5 * Math.cos(2 * t) -
-      2 * Math.cos(3 * t) -
-      Math.cos(4 * t)
-    );
+    const y =
+      centerY -
+      scale *
+        (13 * Math.cos(t) -
+          5 * Math.cos(2 * t) -
+          2 * Math.cos(3 * t) -
+          Math.cos(4 * t));
 
     return { x, y };
   }
@@ -121,29 +126,36 @@ document.addEventListener("DOMContentLoaded", () => {
     draw();
   };
 });
-document.querySelector('.formulario-asistencia').addEventListener('submit', function(event) {
-  event.preventDefault(); // Detiene el comportamiento predeterminado del envío del formulario
+document
+  .querySelector(".formulario-asistencia")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Detiene el comportamiento predeterminado del envío del formulario
 
-  // Recoge los datos del formulario
-  const form = event.target; // El formulario actual
-  const formData = new FormData(form); // Automáticamente mapea los inputs con sus atributos `name`
+    // Recoge los datos del formulario
+    const form = event.target; // El formulario actual
+    const formData = new FormData(form); // Automáticamente mapea los inputs con sus atributos `name`
 
-  // Envía los datos mediante fetch al script de Google
-  fetch('https://script.google.com/macros/s/AKfycby6-1g79utDY0H9-w9fLEWYE4mJ6x5-LRd-ufHNk6jA8TxawD0YAiAdFLTnJX7LEHKD/exec', {
-      method: 'POST',
-      body: formData
-  })
-  .then(response => response.json()) // Procesa la respuesta como JSON
-  .then(data => {
-      if (data.status === 'success') {
-          // Redirige al usuario a la página de confirmación
-          window.location.href = 'http://127.0.0.1:3000/confirmacion.html';
-      } else {
-          alert('Hubo un problema al enviar los datos. Por favor, inténtalo nuevamente.');
+    // Envía los datos mediante fetch al script de Google
+    fetch(
+      "https://script.google.com/macros/s/AKfycby6-1g79utDY0H9-w9fLEWYE4mJ6x5-LRd-ufHNk6jA8TxawD0YAiAdFLTnJX7LEHKD/exec",
+      {
+        method: "POST",
+        body: formData,
       }
-  })
-  .catch(error => {
-      console.error('Error:', error);
-      alert('Error de conexión. Por favor, verifica tu conexión a Internet.');
+    )
+      .then((response) => response.json()) // Procesa la respuesta como JSON
+      .then((data) => {
+        if (data.status === "success") {
+          // Redirige al usuario a la página de confirmación
+          window.location.href = "http://127.0.0.1:3000/confirmacion.html";
+        } else {
+          alert(
+            "Hubo un problema al enviar los datos. Por favor, inténtalo nuevamente."
+          );
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("Error de conexión. Por favor, verifica tu conexión a Internet.");
+      });
   });
-});
