@@ -1,84 +1,57 @@
-/* General reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body and layout */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 20px;
+  background: #fdf6ec;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
 }
 
-/* Boarding pass container */
 .boarding-pass {
-    width: 600px;
-    padding: 20px;
-    background-color: #fff;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    font-size: 16px;
+  background: white;
+  border: 3px dashed #c2a14d;
+  border-radius: 12px;
+  width: 600px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Header */
-.boarding-pass-header {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
+.bp-header {
+  text-align: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-/* Passenger information */
-.passenger-info {
-    margin-top: 20px;
+.bp-header h1 {
+  color: #2f4f6f;
+  margin: 0;
+  font-size: 28px;
 }
 
-.passenger-info div {
-    margin-bottom: 10px;
+.bp-header p {
+  color: #888;
+  margin-top: 5px;
+  font-size: 16px;
 }
 
-.passenger-info strong {
-    color: #333;
+.bp-body .bp-group {
+  margin-bottom: 12px;
+  font-size: 18px;
 }
 
-/* Footer */
-.boarding-pass-footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-    color: #666;
-    border-top: 1px dashed #ddd;
-    padding-top: 10px;
+.bp-group span {
+  color: #555;
 }
 
-/* Decorative elements */
-.boarding-pass::before {
-    content: '';
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    height: 15px;
-    background-color: #4CAF50;
-    border-radius: 5px;
+.bp-group strong {
+  color: #000;
 }
 
-.boarding-pass::after {
-    content: 'BOARDING PASS';
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 12px;
-    color: #fff;
-    font-weight: bold;
+.bp-footer {
+  text-align: center;
+  border-top: 2px dashed #ccc;
+  padding-top: 15px;
+  margin-top: 20px;
+  color: #444;
 }
