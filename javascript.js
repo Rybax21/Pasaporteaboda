@@ -30,17 +30,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const fotoReal = document.getElementById('fotoReal');
   const texto = document.querySelector('.texto-polaroid');
 
-  if (fotoClick) {
-    fotoClick.addEventListener('click', () => {
-      fotoReal.src = 'Nosotros.jpg';
-      fotoReal.style.opacity = '1';
-      texto.style.opacity = '1';
+if (fotoClick) {
+  fotoClick.addEventListener('click', () => {
+    fotoReal.src = 'Nosotros.jpg';
+    fotoReal.style.opacity = '1';
 
-      const audio = new Audio('camera-click.mp3');
-      audio.play();
-    });
-  }
-});
+    // Solo si existe el texto
+    const texto = document.querySelector('.texto-polaroid');
+    if (texto) texto.style.opacity = '1';
+
+    const audio = new Audio('camera-click.mp3');
+    audio.play().catch(e => console.log("No se pudo reproducir el audio: ", e));
+  });
+}
+
 // === TRAZADO EN FORMA DE CORAZÓN CON ESTELA ===
 document.addEventListener("DOMContentLoaded", () => {
   const canvas = document.getElementById("canvasAvion");
