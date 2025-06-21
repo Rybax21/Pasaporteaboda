@@ -1,12 +1,12 @@
 body {
-  background: #fdf6ec;
+  background: url('playa.png') no-repeat center center fixed;
+  background-size: cover;
   font-family: 'Arial', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px;
 }
-
 .boarding-pass {
   background: white;
   border: 3px dashed #c2a14d;
