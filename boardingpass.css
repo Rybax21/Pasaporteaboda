@@ -1,57 +1,73 @@
 body {
   background: url('playa.jpg') no-repeat center center fixed;
   background-size: cover;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Montserrat', 'Arial', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px;
+  min-height: 100vh;
+  text-transform: uppercase;
 }
+
 .boarding-pass {
-  background: white;
-  border: 3px dashed #c2a14d;
-  border-radius: 12px;
-  width: 600px;
-  padding: 30px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #e0b554;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+  position: relative;
 }
 
 .bp-header {
   text-align: center;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 10px;
+  border-bottom: 2px dashed #ccc;
+  padding-bottom: 15px;
   margin-bottom: 20px;
 }
 
 .bp-header h1 {
-  color: #2f4f6f;
-  margin: 0;
-  font-size: 28px;
+  color: #c28c30;
+  font-size: 26px;
+  margin-bottom: 4px;
 }
 
 .bp-header p {
-  color: #888;
-  margin-top: 5px;
-  font-size: 16px;
+  color: #555;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 .bp-body .bp-group {
-  margin-bottom: 12px;
-  font-size: 18px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
 }
 
 .bp-group span {
-  color: #555;
+  font-weight: 600;
+  color: #666;
 }
 
 .bp-group strong {
+  font-weight: 700;
   color: #000;
+  text-align: right;
 }
 
 .bp-footer {
   text-align: center;
   border-top: 2px dashed #ccc;
   padding-top: 15px;
-  margin-top: 20px;
+  margin-top: 25px;
   color: #444;
+  font-size: 13px;
+  letter-spacing: 0.5px;
 }
