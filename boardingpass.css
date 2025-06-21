@@ -1,65 +1,65 @@
 body {
   background: url('playa.jpg') no-repeat center center fixed;
   background-size: cover;
-  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
   min-height: 100vh;
-  text-transform: uppercase;
+  padding: 20px;
+  margin: 0;
 }
 
 .boarding-pass {
-  background: rgba(255, 255, 255, 0.95);
-  border: 2px solid #e0b554;
+  background: rgba(255, 255, 255, 0.92);
+  border: 2px solid gold;
   border-radius: 20px;
+  max-width: 420px;
   width: 100%;
-  max-width: 400px;
-  padding: 30px 24px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(8px);
-  position: relative;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  backdrop-filter: blur(10px);
 }
 
 .bp-header {
   text-align: center;
   border-bottom: 2px dashed #ccc;
   padding-bottom: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .bp-header h1 {
-  color: #c28c30;
-  font-size: 26px;
-  margin-bottom: 4px;
+  font-family: 'Cinzel', serif;
+  font-size: 24px;
+  color: #b58e00;
+  margin: 0;
 }
 
 .bp-header p {
+  font-size: 13px;
   color: #555;
-  font-size: 14px;
   letter-spacing: 1px;
 }
 
-.bp-body .bp-group {
-  margin-bottom: 16px;
+.bp-body {
   font-size: 14px;
-  color: #333;
+}
+
+.bp-group {
   display: flex;
   justify-content: space-between;
+  padding: 8px 0;
   border-bottom: 1px solid #ddd;
-  padding-bottom: 6px;
 }
 
 .bp-group span {
   font-weight: 600;
-  color: #666;
+  color: #444;
 }
 
 .bp-group strong {
   font-weight: 700;
-  color: #000;
-  text-align: right;
+  color: #111;
 }
 
 .bp-footer {
@@ -67,7 +67,25 @@ body {
   border-top: 2px dashed #ccc;
   padding-top: 15px;
   margin-top: 25px;
-  color: #444;
   font-size: 13px;
-  letter-spacing: 0.5px;
+  color: #444;
+}
+
+.bp-footer::before {
+  content: '\2708';
+  font-size: 20px;
+  display: block;
+  margin-bottom: 5px;
+  color: #999;
+}
+
+.qr-placeholder {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.qr-placeholder img {
+  width: 80px;
+  opacity: 0.4;
 }
