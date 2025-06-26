@@ -54,12 +54,6 @@ body {
   text-align: center;
 }
 
-/* Opcional: si tienes elementos con font-family diferente */
-h3, p, button, .bloque, .momento, .formulario-asistencia input, .formulario-asistencia textarea {
-  font-family: 'Playfair Display', serif !important;
-}
-
-
 .fecha {
   font-family: 'Playfair Display', serif;
   font-size: 1.2rem;
