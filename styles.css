@@ -1,3 +1,7 @@
+
+/* SECCIÓN 1: CABECERA PASSPORT */
+/* ============================ */
+
 body {
   margin: 0;
   font-family: 'Playfair Display', serif;
@@ -6,56 +10,50 @@ body {
   overflow-x: hidden;
 }
 
-/* Encabezado pequeño arriba del título */
 .bienvenida {
-  font-size: 22px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
   font-style: italic;
   font-weight: 400;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 16px;
   color: #3a2a1a;
-  opacity: 0.9;
+  text-align: center;
+  margin-bottom: 16px;   /* Más separación hacia el h2 */
+  margin-top: 10px;      /* Un poco de aire por arriba */
+  letter-spacing: 0.3px;
+  opacity: 0.9;          /* Ligera transparencia elegante */
   text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);
-  letter-spacing: 0.5px;
+
 }
 
-/* Título principal */
-.titulo {
-  font-size: 38px;
-  font-weight: 700;
+}
+
+
+.hero {
+  background-color: #520b0b;
+  background-image: repeating-linear-gradient(45deg, #520b0b 0px, #520b0b 10px, #400909 10px, #400909 20px);
+  color: #fff;
   text-align: center;
-  margin-top: 5px;
-  margin-bottom: 40px;
-  letter-spacing: 2px;
-  color: #3b1f1f;
+  padding: 80px 20px;
+  font-family: 'Cormorant Garamond', serif;
 }
 
-/* Subtítulo debajo (la frase de la foto) */
-.subtitulo {
-  font-size: 18px;
-  font-style: italic;
-  font-weight: 400;
-  background-color: white;
-  display: inline-block;
-  padding: 4px 8px;
-  border-radius: 4px;
-  color: #2c1c0f;
-  margin-bottom: 0;
-  text-align: center;
+.titulo-passport {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  letter-spacing: 0.1em;
 }
 
-/* Nombres de la pareja */
+.brujula {
+  width: 120px;
+  margin: 20px 0;
+}
+
 .nombres {
   font-family: 'Great Vibes', cursive;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: normal;
-  margin-top: 2rem;
-  text-align: center;
-  color: #fefefe;
-  line-height: 1.4;
+  margin-top: 1rem;
 }
-
 
 .fecha {
   font-family: 'Playfair Display', serif;
