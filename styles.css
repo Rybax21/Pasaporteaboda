@@ -101,6 +101,8 @@ body {
   margin-bottom: 0;
   color: #2c1c0f;
   font-family: 'Playfair Display', serif;
+  background-color: white;
+  display: inline-block;
 }
 
 .titulo {
