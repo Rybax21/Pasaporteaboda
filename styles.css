@@ -21,10 +21,8 @@ body {
   margin-top: 10px;      /* Un poco de aire por arriba */
   letter-spacing: 0.3px;
   opacity: 0.9;          /* Ligera transparencia elegante */
-animation: fadeIn 1.2s ease-out;
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
+  text-shadow: 0.5px 0.5px 1px rgba(0,0,0,0.1);
+
 }
 
 }
