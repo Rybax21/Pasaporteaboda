@@ -10,12 +10,11 @@ body {
   overflow-x: hidden;
 }
 
-
 .bienvenida {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
-  font-style: italic;
-  color: #2f2f2f;
+  font-family: 'Georgia', serif !important;
+  font-size: 18px !important;
+  font-style: italic !important;
+  color: #2f2f2f !important;
 }
 
 .hero {
