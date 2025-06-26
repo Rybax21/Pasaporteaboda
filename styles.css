@@ -11,11 +11,24 @@ body {
 }
 
 .bienvenida {
-  font-family: 'Georgia', serif !important;
-  font-size: 18px !important;
-  font-style: italic !important;
-  color: #2f2f2f !important;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  color: #3a2a1a;
+  text-align: center;
+  margin-bottom: 16px;   /* Más separación hacia el h2 */
+  margin-top: 10px;      /* Un poco de aire por arriba */
+  letter-spacing: 0.3px;
+  opacity: 0.9;          /* Ligera transparencia elegante */
+animation: fadeIn 1.2s ease-out;
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
+
+}
+
 
 .hero {
   background-color: #520b0b;
