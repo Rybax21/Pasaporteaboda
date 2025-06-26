@@ -54,6 +54,7 @@ body {
   text-align: center;
   color: #fff; /* O el color que uses en el fondo */
   line-height: 1.4;
+   font-family: 'Great Vibes', cursive !important;
 }
 
 .amp {
