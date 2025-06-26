@@ -48,9 +48,18 @@ body {
 
 .nombres {
   font-family: 'Great Vibes', cursive;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: normal;
-  margin-top: 1rem;
+  margin: 2rem 0;
+  text-align: center;
+  color: #fff; /* O el color que uses en el fondo */
+  line-height: 1.4;
+}
+
+.amp {
+  font-size: 2rem;
+  display: inline-block;
+  margin: 0.2rem 0;
 }
 
 .fecha {
