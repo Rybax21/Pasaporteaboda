@@ -10,6 +10,14 @@ body {
   overflow-x: hidden;
 }
 
+
+.bienvenida {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-style: italic;
+  color: #2f2f2f;
+}
+
 .hero {
   background-color: #520b0b;
   background-image: repeating-linear-gradient(45deg, #520b0b 0px, #520b0b 10px, #400909 10px, #400909 20px);
